@@ -207,6 +207,47 @@
   .to-beige-sand\/20 {
     --tw-gradient-to: rgb(225 219 201 / 0.2) var(--tw-gradient-to-position);
   }
+  
+  /* Earth Brown utilities */
+  .bg-earth-brown {
+    background-color: #5e4b3b;
+  }
+  
+  .text-earth-brown {
+    color: #5e4b3b;
+  }
+  
+  .from-earth-brown {
+    --tw-gradient-from: #5e4b3b var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(94 75 59 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+  
+  .to-earth-brown {
+    --tw-gradient-to: #5e4b3b var(--tw-gradient-to-position);
+  }
+  
+  .to-earth-brown\/90 {
+    --tw-gradient-to: rgb(94 75 59 / 0.9) var(--tw-gradient-to-position);
+  }
+  
+  /* Dark Pine utilities */
+  .bg-dark-pine {
+    background-color: #2d4530;
+  }
+  
+  .text-dark-pine {
+    color: #2d4530;
+  }
+  
+  .to-dark-pine {
+    --tw-gradient-to: #2d4530 var(--tw-gradient-to-position);
+  }
+  
+  /* Beige Sand text utilities */
+  .text-beige-sand {
+    color: #e1dbc9;
+  }
 }
 
 @layer components {
