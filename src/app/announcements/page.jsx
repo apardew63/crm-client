@@ -35,7 +35,7 @@ function AnnouncementsPageContent() {
 
   const fetchAnnouncements = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/holidays", {
+    const response = await fetch("https://crm-server-chi.vercel.app/api/holidays", {
         headers: { Authorization: `Bearer ${localStorage.getItem("accessToken")}` }
       })
 
@@ -76,7 +76,7 @@ function AnnouncementsPageContent() {
   const handleCreateAnnouncement = async (e) => {
     e.preventDefault()
     try {
-      const response = await fetch("http://localhost:5000/api/holidays", {
+      const response = await fetch("https://crm-server-chi.vercel.app/api/holidays", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -100,7 +100,7 @@ function TasksPageContent() {
         return
       }
 
-      const response = await fetch("http://localhost:5000/api/employees", {
+      const response = await fetch("https://crm-server-chi.vercel.app/api/employees", {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json"
@@ -130,7 +130,7 @@ function TasksPageContent() {
         return
       }
 
-      const response = await fetch("http://localhost:5000/api/projects", {
+      const response = await fetch("https://crm-server-chi.vercel.app/api/projects", {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json"
@@ -162,7 +162,7 @@ function TasksPageContent() {
         return
       }
 
-      const response = await fetch("http://localhost:5000/api/tasks", {
+      const response = await fetch("https://crm-server-chi.vercel.app/api/tasks", {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json"
@@ -196,7 +196,7 @@ function TasksPageContent() {
         return
       }
 
-      const response = await fetch("http://localhost:5000/api/tasks/stats", {
+      const response = await fetch("https://crm-server-chi.vercel.app/api/tasks/stats", {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json"
@@ -267,7 +267,7 @@ function TasksPageContent() {
         return
       }
 
-      const response = await fetch(`http://localhost:5000/api/tasks/${taskId}/start`, {
+      const response = await fetch(`https://crm-server-chi.vercel.app/api/tasks/${taskId}/start`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -301,7 +301,7 @@ function TasksPageContent() {
         return
       }
 
-      const response = await fetch(`http://localhost:5000/api/tasks/${taskId}/stop`, {
+      const response = await fetch(`https://crm-server-chi.vercel.app/api/tasks/${taskId}/stop`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -335,7 +335,7 @@ function TasksPageContent() {
         return
       }
 
-      const response = await fetch(`http://localhost:5000/api/tasks/${taskId}/complete`, {
+      const response = await fetch(`https://crm-server-chi.vercel.app/api/tasks/${taskId}/complete`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -375,7 +375,7 @@ function TasksPageContent() {
         return
       }
 
-      const response = await fetch("http://localhost:5000/api/tasks", {
+      const response = await fetch("https://crm-server-chi.vercel.app/api/tasks", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -417,7 +417,7 @@ function TasksPageContent() {
         return
       }
 
-      const response = await fetch(`http://localhost:5000/api/tasks/${taskId}/assignees`, {
+      const response = await fetch(`https://crm-server-chi.vercel.app/api/tasks/${taskId}/assignees`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -446,7 +446,7 @@ function TasksPageContent() {
         return
       }
 
-      const response = await fetch(`http://localhost:5000/api/tasks/${taskId}/assignees`, {
+      const response = await fetch(`https://crm-server-chi.vercel.app/api/tasks/${taskId}/assignees`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -475,7 +475,7 @@ function TasksPageContent() {
         return
       }
 
-      const response = await fetch(`http://localhost:5000/api/tasks/${taskId}/progress`, {
+      const response = await fetch(`https://crm-server-chi.vercel.app/api/tasks/${taskId}/progress`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

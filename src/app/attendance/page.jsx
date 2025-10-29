@@ -42,7 +42,7 @@ function AttendanceContent() {
     try {
       setLoading(true);
       const token = await getToken();
-      const response = await fetch('http://localhost:5000/api/attendance/uploaded-pdfs', {
+      const response = await fetch('https://crm-server-chi.vercel.app/api/attendance/uploaded-pdfs', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -92,7 +92,7 @@ function AttendanceContent() {
       const formData = new FormData();
       formData.append('file', selectedFile);
 
-      const response = await fetch('http://localhost:5000/api/attendance/upload-pdf', {
+      const response = await fetch('https://crm-server-chi.vercel.app/api/attendance/upload-pdf', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`
@@ -126,7 +126,7 @@ function AttendanceContent() {
   const downloadPdf = async (filename) => {
     try {
       const token = await getToken();
-      const response = await fetch(`http://localhost:5000/api/attendance/download-pdf/${encodeURIComponent(filename)}`, {
+      const response = await fetch(`https://crm-server-chi.vercel.app/api/attendance/download-pdf/${encodeURIComponent(filename)}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }

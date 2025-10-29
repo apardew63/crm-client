@@ -17,13 +17,13 @@ export default function SalesDashboard() {
   const fetchSalesData = async () => {
     try {
       const [statsRes, upcomingRes, followUpsRes] = await Promise.all([
-        fetch('http://localhost:5000/api/sales/stats', {
+        fetch('https://crm-server-chi.vercel.app/api/sales/stats', {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
         }),
-        fetch('http://localhost:5000/api/sales/upcoming', {
+        fetch('https://crm-server-chi.vercel.app/api/sales/upcoming', {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
         }),
-        fetch('http://localhost:5000/api/sales/follow-ups', {
+        fetch('https://crm-server-chi.vercel.app/api/sales/follow-ups', {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
         })
       ])
@@ -50,7 +50,7 @@ export default function SalesDashboard() {
   const initiateCall = async (callId) => {
     setIsCalling(true)
     try {
-      const response = await fetch(`http://localhost:5000/api/sales/calls/${callId}/initiate-call`, {
+      const response = await fetch(`https://crm-server-chi.vercel.app/api/sales/calls/${callId}/initiate-call`, {
         method: 'POST',
         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
       })

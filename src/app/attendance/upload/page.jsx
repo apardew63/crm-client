@@ -87,7 +87,7 @@ function AttendanceUploadContent() {
         return;
       }
 
-      const response = await fetch('http://localhost:5000/api/attendance/upload-pdf', {
+      const response = await fetch('https://crm-server-chi.vercel.app/api/attendance/upload-pdf', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`

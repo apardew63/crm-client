@@ -36,10 +36,10 @@ function ProfilePageContent() {
   const fetchUserData = async () => {
     try {
       const [statsRes, perfRes] = await Promise.all([
-        fetch('http://localhost:5000/api/auth/dashboard-stats', {
+        fetch('https://crm-server-chi.vercel.app/api/auth/dashboard-stats', {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
         }),
-        fetch(`http://localhost:5000/api/performance/employee/${user._id}?limit=1`, {
+        fetch(`https://crm-server-chi.vercel.app/api/performance/employee/${user._id}?limit=1`, {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
         })
       ])
@@ -60,7 +60,7 @@ function ProfilePageContent() {
 
   const handleSaveProfile = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/auth/profile', {
+      const response = await fetch('https://crm-server-chi.vercel.app/api/auth/profile', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

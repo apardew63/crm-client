@@ -22,7 +22,7 @@ export function EmployeeOfMonth() {
       const token = getToken()
       if (!token) return
 
-      const response = await fetch('http://localhost:5000/api/tasks/employee-of-month', {
+      const response = await fetch('https://crm-server-chi.vercel.app/api/tasks/employee-of-month', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'

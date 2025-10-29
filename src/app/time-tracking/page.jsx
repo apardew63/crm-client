@@ -27,7 +27,7 @@ function TimeTrackingPageContent() {
 
   const fetchTasks = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/tasks', {
+      const response = await fetch('https://crm-server-chi.vercel.app/api/tasks', {
         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
       })
 
@@ -45,7 +45,7 @@ function TimeTrackingPageContent() {
 
   const handleStartTask = async (taskId) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/tasks/${taskId}/start`, {
+      const response = await fetch(`https://crm-server-chi.vercel.app/api/tasks/${taskId}/start`, {
         method: 'POST',
         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
       })
@@ -60,7 +60,7 @@ function TimeTrackingPageContent() {
 
   const handleStopTask = async (taskId) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/tasks/${taskId}/stop`, {
+      const response = await fetch(`https://crm-server-chi.vercel.app/api/tasks/${taskId}/stop`, {
         method: 'POST',
         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
       })

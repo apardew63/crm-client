@@ -29,13 +29,13 @@ function PerformancePageContent() {
   const fetchPerformanceData = async () => {
     try {
       const [perfRes, eotmRes, statsRes] = await Promise.all([
-        fetch('http://localhost:5000/api/performance', {
+        fetch('https://crm-server-chi.vercel.app/api/performance', {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
         }),
-        fetch('http://localhost:5000/api/performance/employee-of-month/current', {
+        fetch('https://crm-server-chi.vercel.app/api/performance/employee-of-month/current', {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
         }),
-        fetch('http://localhost:5000/api/performance/stats', {
+        fetch('https://crm-server-chi.vercel.app/api/performance/stats', {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
         })
       ])

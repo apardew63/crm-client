@@ -41,7 +41,7 @@ function EmployeesPageContent() {
 
   const fetchEmployees = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/employees', {
+    const response = await fetch('https://crm-server-chi.vercel.app/api/employees', {
         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
       })
 
@@ -71,7 +71,7 @@ function EmployeesPageContent() {
 
   const handleStatusChange = async (employeeId, newStatus) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/employees/${employeeId}`, {
+      const response = await fetch(`https://crm-server-chi.vercel.app/api/employees/${employeeId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -89,7 +89,7 @@ function EmployeesPageContent() {
   const handleAddEmployee = async (e) => {
     e.preventDefault()
     try {
-      const response = await fetch('http://localhost:5000/api/employees', {
+      const response = await fetch('https://crm-server-chi.vercel.app/api/employees', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

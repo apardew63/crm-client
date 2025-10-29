@@ -43,13 +43,13 @@ function SearchPageContent() {
     try {
       // Simulate API calls - in real implementation, these would be actual API calls
       const [tasksRes, employeesRes, announcementsRes] = await Promise.all([
-        fetch(`http://localhost:5000/api/tasks?search=${encodeURIComponent(searchQuery)}`, {
+        fetch(`https://crm-server-chi.vercel.app/api/tasks?search=${encodeURIComponent(searchQuery)}`, {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
         }).catch(() => ({ ok: false })),
-        fetch(`http://localhost:5000/api/employees/search?q=${encodeURIComponent(searchQuery)}`, {
+        fetch(`https://crm-server-chi.vercel.app/api/employees/search?q=${encodeURIComponent(searchQuery)}`, {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
         }).catch(() => ({ ok: false })),
-        fetch(`http://localhost:5000/api/holidays?search=${encodeURIComponent(searchQuery)}`, {
+        fetch(`https://crm-server-chi.vercel.app/api/holidays?search=${encodeURIComponent(searchQuery)}`, {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
         }).catch(() => ({ ok: false }))
       ])

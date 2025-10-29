@@ -57,7 +57,7 @@ function EmployeeOfMonthContent() {
       const endDate = new Date(selectedMonth.getFullYear(), selectedMonth.getMonth() + 1, 0).toISOString()
 
       const response = await fetch(
-        `http://localhost:5000/api/tasks/employee-of-month?startDate=${startDate}&endDate=${endDate}`,
+        `https://crm-server-chi.vercel.app/api/tasks/employee-of-month?startDate=${startDate}&endDate=${endDate}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

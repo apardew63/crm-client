@@ -31,13 +31,13 @@ function PayrollPageContent() {
   const fetchPayrollData = async () => {
     try {
       const [payrollsRes, statsRes, pendingRes] = await Promise.all([
-        fetch('http://localhost:5000/api/payroll', {
+        fetch('https://crm-server-chi.vercel.app/api/payroll', {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
         }),
-        fetch('http://localhost:5000/api/payroll/stats', {
+        fetch('https://crm-server-chi.vercel.app/api/payroll/stats', {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
         }),
-        fetch('http://localhost:5000/api/payroll/pending', {
+        fetch('https://crm-server-chi.vercel.app/api/payroll/pending', {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
         })
       ])
@@ -65,7 +65,7 @@ function PayrollPageContent() {
 
   const handleApprovePayroll = async (payrollId) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/payroll/${payrollId}/approve`, {
+      const response = await fetch(`https://crm-server-chi.vercel.app/api/payroll/${payrollId}/approve`, {
         method: 'POST',
         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
       })
@@ -80,7 +80,7 @@ function PayrollPageContent() {
 
   const handleMarkAsPaid = async (payrollId) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/payroll/${payrollId}/pay`, {
+      const response = await fetch(`https://crm-server-chi.vercel.app/api/payroll/${payrollId}/pay`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

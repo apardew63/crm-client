@@ -17,13 +17,13 @@ export default function AdminDashboard() {
   const fetchDashboardData = async () => {
     try {
       const [statsRes, eotmRes, holidaysRes] = await Promise.all([
-        fetch('http://localhost:5000/api/auth/dashboard-stats', {
+        fetch('https://crm-server-chi.vercel.app/api/auth/dashboard-stats', {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
         }),
-        fetch('http://localhost:5000/api/performance/employee-of-month/current', {
+        fetch('https://crm-server-chi.vercel.app/api/performance/employee-of-month/current', {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
         }),
-        fetch('http://localhost:5000/api/holidays?limit=5', {
+        fetch('https://crm-server-chi.vercel.app/api/holidays?limit=5', {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
         })
       ])

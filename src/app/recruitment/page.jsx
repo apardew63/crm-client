@@ -31,10 +31,10 @@ function RecruitmentPageContent() {
   const fetchRecruitmentData = async () => {
     try {
       const [jobsRes, statsRes] = await Promise.all([
-        fetch('http://localhost:5000/api/recruitment', {
+        fetch('https://crm-server-chi.vercel.app/api/recruitment', {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
         }),
-        fetch('http://localhost:5000/api/recruitment/stats', {
+        fetch('https://crm-server-chi.vercel.app/api/recruitment/stats', {
           headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
         })
       ])
@@ -57,7 +57,7 @@ function RecruitmentPageContent() {
 
   const handleApplyForJob = async (jobId) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/recruitment/${jobId}/apply`, {
+      const response = await fetch(`https://crm-server-chi.vercel.app/api/recruitment/${jobId}/apply`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -78,7 +78,7 @@ function RecruitmentPageContent() {
 
   const handleUpdateApplicationStatus = async (jobId, applicationId, status) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/recruitment/${jobId}/application/${applicationId}/status`, {
+      const response = await fetch(`https://crm-server-chi.vercel.app/api/recruitment/${jobId}/application/${applicationId}/status`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
