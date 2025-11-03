@@ -194,7 +194,7 @@ export function AppSidebar({
       className="border-r border-border/40 bg-white shadow-medium"
       {...props}
     >
-      <SidebarHeader className="border-b border-border/30 bg-white/95 backdrop-blur-md">
+      <SidebarHeader className="border-b border-border/30 bg-white backdrop-blur-md">
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton 
@@ -227,7 +227,7 @@ export function AppSidebar({
         </SidebarMenu>
       </SidebarHeader>
       
-      <SidebarContent className="px-3 py-6 space-y-6 bg-white/50">
+      <SidebarContent className="px-3 py-6 space-y-6 bg-white">
         <NavMain items={data.navMain} />
         <div className="px-2">
           <div className="h-px bg-border/30" />
@@ -235,7 +235,7 @@ export function AppSidebar({
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
 
-      <SidebarFooter className="border-t border-border/30 bg-white/95 backdrop-blur-md p-4">
+      <SidebarFooter className="border-t border-border/30 bg-white backdrop-blur-md p-4">
         <NavUser user={data.user} />
       </SidebarFooter>
     </Sidebar>
