@@ -2789,7 +2789,7 @@ function NotificationBell() {
     const fetchStats = async ()=>{
         if (!user) return;
         try {
-            const response = await fetch(`${("TURBOPACK compile-time value", "http://localhost:5000")}/api/notifications/stats`, {
+            const response = await fetch(`${("TURBOPACK compile-time value", "https://infinitum-alpha.vercel.app/")}/api/notifications/stats`, {
                 headers: {
                     'Authorization': `Bearer ${getToken()}`
                 }
@@ -2806,7 +2806,7 @@ function NotificationBell() {
     const fetchTaskCount = async ()=>{
         if (!user) return;
         try {
-            const response = await fetch(`${("TURBOPACK compile-time value", "http://localhost:5000")}/api/tasks?limit=1`, {
+            const response = await fetch(`${("TURBOPACK compile-time value", "https://infinitum-alpha.vercel.app/")}/api/tasks?limit=1`, {
                 headers: {
                     'Authorization': `Bearer ${getToken()}`
                 }
@@ -2827,7 +2827,7 @@ function NotificationBell() {
     const fetchNotifications = async ()=>{
         if (!user) return;
         try {
-            const response = await fetch(`${("TURBOPACK compile-time value", "http://localhost:5000")}/api/notifications?limit=10`, {
+            const response = await fetch(`${("TURBOPACK compile-time value", "https://infinitum-alpha.vercel.app/")}/api/notifications?limit=10`, {
                 headers: {
                     'Authorization': `Bearer ${getToken()}`
                 }
@@ -2843,7 +2843,7 @@ function NotificationBell() {
     // Mark notification as read
     const markAsRead = async (notificationId)=>{
         try {
-            const response = await fetch(`${("TURBOPACK compile-time value", "http://localhost:5000")}/api/notifications/${notificationId}/read`, {
+            const response = await fetch(`${("TURBOPACK compile-time value", "https://infinitum-alpha.vercel.app/")}/api/notifications/${notificationId}/read`, {
                 method: 'PUT',
                 headers: {
                     'Authorization': `Bearer ${getToken()}`
@@ -2868,7 +2868,7 @@ function NotificationBell() {
     // Mark all as read
     const markAllAsRead = async ()=>{
         try {
-            const response = await fetch(`${("TURBOPACK compile-time value", "http://localhost:5000")}/api/notifications/mark-all-read`, {
+            const response = await fetch(`${("TURBOPACK compile-time value", "https://infinitum-alpha.vercel.app/")}/api/notifications/mark-all-read`, {
                 method: 'PUT',
                 headers: {
                     'Authorization': `Bearer ${getToken()}`
@@ -2892,7 +2892,7 @@ function NotificationBell() {
     // Delete notification
     const deleteNotification = async (notificationId)=>{
         try {
-            const response = await fetch(`${("TURBOPACK compile-time value", "http://localhost:5000")}/api/notifications/${notificationId}`, {
+            const response = await fetch(`${("TURBOPACK compile-time value", "https://infinitum-alpha.vercel.app/")}/api/notifications/${notificationId}`, {
                 method: 'DELETE',
                 headers: {
                     'Authorization': `Bearer ${getToken()}`
@@ -3769,7 +3769,7 @@ function EmployeeOfMonth() {
         try {
             const token = getToken();
             if (!token) return;
-            const response = await fetch('http://localhost:5000/api/tasks/employee-of-month', {
+            const response = await fetch('https://crm-server-chi.vercel.app/api/tasks/employee-of-month', {
                 headers: {
                     'Authorization': `Bearer ${token}`,
                     'Content-Type': 'application/json'
@@ -4360,17 +4360,17 @@ function AdminDashboard() {
     const fetchDashboardData = async ()=>{
         try {
             const [statsRes, eotmRes, holidaysRes] = await Promise.all([
-                fetch('http://localhost:5000/api/auth/dashboard-stats', {
+                fetch('https://crm-server-chi.vercel.app/api/auth/dashboard-stats', {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('accessToken')}`
                     }
                 }),
-                fetch('http://localhost:5000/api/performance/employee-of-month/current', {
+                fetch('https://crm-server-chi.vercel.app/api/performance/employee-of-month/current', {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('accessToken')}`
                     }
                 }),
-                fetch('http://localhost:5000/api/holidays?limit=5', {
+                fetch('https://crm-server-chi.vercel.app/api/holidays?limit=5', {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('accessToken')}`
                     }
@@ -5319,17 +5319,17 @@ function SalesDashboard() {
     const fetchSalesData = async ()=>{
         try {
             const [statsRes, upcomingRes, followUpsRes] = await Promise.all([
-                fetch('http://localhost:5000/api/sales/stats', {
+                fetch('https://crm-server-chi.vercel.app/api/sales/stats', {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('accessToken')}`
                     }
                 }),
-                fetch('http://localhost:5000/api/sales/upcoming', {
+                fetch('https://crm-server-chi.vercel.app/api/sales/upcoming', {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('accessToken')}`
                     }
                 }),
-                fetch('http://localhost:5000/api/sales/follow-ups', {
+                fetch('https://crm-server-chi.vercel.app/api/sales/follow-ups', {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('accessToken')}`
                     }
@@ -5354,7 +5354,7 @@ function SalesDashboard() {
     const initiateCall = async (callId)=>{
         setIsCalling(true);
         try {
-            const response = await fetch(`http://localhost:5000/api/sales/calls/${callId}/initiate-call`, {
+            const response = await fetch(`https://crm-server-chi.vercel.app/api/sales/calls/${callId}/initiate-call`, {
                 method: 'POST',
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -6229,22 +6229,22 @@ function EmployeeDashboard() {
     const fetchEmployeeData = async ()=>{
         try {
             const [statsRes, tasksRes, holidaysRes, perfRes] = await Promise.all([
-                fetch('http://localhost:5000/api/auth/dashboard-stats', {
+                fetch('https://crm-server-chi.vercel.app/api/auth/dashboard-stats', {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('accessToken')}`
                     }
                 }),
-                fetch('http://localhost:5000/api/tasks?limit=5', {
+                fetch('https://crm-server-chi.vercel.app/api/tasks?limit=5', {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('accessToken')}`
                     }
                 }),
-                fetch('http://localhost:5000/api/holidays', {
+                fetch('https://crm-server-chi.vercel.app/api/holidays', {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('accessToken')}`
                     }
                 }),
-                fetch(`http://localhost:5000/api/performance/employee/${user._id}?limit=1`, {
+                fetch(`https://crm-server-chi.vercel.app/api/performance/employee/${user._id}?limit=1`, {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('accessToken')}`
                     }

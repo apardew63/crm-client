@@ -5027,7 +5027,7 @@ function TasksPageContent() {
                 console.error("No authentication token found");
                 return;
             }
-            const response = await fetch("http://localhost:5000/api/employees", {
+            const response = await fetch("https://crm-server-chi.vercel.app/api/employees", {
                 headers: {
                     Authorization: "Bearer ".concat(token),
                     "Content-Type": "application/json"
@@ -5055,7 +5055,7 @@ function TasksPageContent() {
                 console.error("No authentication token found");
                 return;
             }
-            const response = await fetch("http://localhost:5000/api/projects", {
+            const response = await fetch("https://crm-server-chi.vercel.app/api/projects", {
                 headers: {
                     Authorization: "Bearer ".concat(token),
                     "Content-Type": "application/json"
@@ -5085,7 +5085,7 @@ function TasksPageContent() {
                 setLoading(false);
                 return;
             }
-            const response = await fetch("http://localhost:5000/api/tasks", {
+            const response = await fetch("https://crm-server-chi.vercel.app/api/tasks", {
                 headers: {
                     Authorization: "Bearer ".concat(token),
                     "Content-Type": "application/json"
@@ -5117,7 +5117,7 @@ function TasksPageContent() {
                 console.error("No authentication token found");
                 return;
             }
-            const response = await fetch("http://localhost:5000/api/tasks/stats", {
+            const response = await fetch("https://crm-server-chi.vercel.app/api/tasks/stats", {
                 headers: {
                     Authorization: "Bearer ".concat(token),
                     "Content-Type": "application/json"
@@ -5210,7 +5210,7 @@ function TasksPageContent() {
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].error("Authentication required");
                 return;
             }
-            const response = await fetch("http://localhost:5000/api/tasks/".concat(taskId, "/start"), {
+            const response = await fetch("https://crm-server-chi.vercel.app/api/tasks/".concat(taskId, "/start"), {
                 method: "POST",
                 headers: {
                     Authorization: "Bearer ".concat(token),
@@ -5241,7 +5241,7 @@ function TasksPageContent() {
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].error("Authentication required");
                 return;
             }
-            const response = await fetch("http://localhost:5000/api/tasks/".concat(taskId, "/stop"), {
+            const response = await fetch("https://crm-server-chi.vercel.app/api/tasks/".concat(taskId, "/stop"), {
                 method: "POST",
                 headers: {
                     Authorization: "Bearer ".concat(token),
@@ -5272,7 +5272,7 @@ function TasksPageContent() {
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].error("Authentication required");
                 return;
             }
-            const response = await fetch("http://localhost:5000/api/tasks/".concat(taskId, "/complete"), {
+            const response = await fetch("https://crm-server-chi.vercel.app/api/tasks/".concat(taskId, "/complete"), {
                 method: "POST",
                 headers: {
                     Authorization: "Bearer ".concat(token),
@@ -5308,7 +5308,7 @@ function TasksPageContent() {
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].error("Authentication required");
                 return;
             }
-            const response = await fetch("http://localhost:5000/api/tasks", {
+            const response = await fetch("https://crm-server-chi.vercel.app/api/tasks", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -5347,7 +5347,7 @@ function TasksPageContent() {
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].error("Authentication required");
                 return;
             }
-            const response = await fetch("http://localhost:5000/api/tasks/".concat(taskId, "/assignees"), {
+            const response = await fetch("https://crm-server-chi.vercel.app/api/tasks/".concat(taskId, "/assignees"), {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -5375,7 +5375,7 @@ function TasksPageContent() {
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].error("Authentication required");
                 return;
             }
-            const response = await fetch("http://localhost:5000/api/tasks/".concat(taskId, "/assignees"), {
+            const response = await fetch("https://crm-server-chi.vercel.app/api/tasks/".concat(taskId, "/assignees"), {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json",
@@ -5404,7 +5404,7 @@ function TasksPageContent() {
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].error("Authentication required");
                     return;
                 }
-                const response = await fetch("http://localhost:5000/api/tasks/".concat(taskId, "/progress"), {
+                const response = await fetch("https://crm-server-chi.vercel.app/api/tasks/".concat(taskId, "/progress"), {
                     method: "PUT",
                     headers: {
                         "Content-Type": "application/json",

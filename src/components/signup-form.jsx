@@ -71,7 +71,7 @@ export function SignupForm({ className, ...props }) {
 
     try {
       // const response = await fetch("https://crm-server-chi.vercel.app/api/auth/register", {
-      const response = await fetch(`${URL}/api/auth/login`, {
+      const response = await fetch(`${URL}/api/auth/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

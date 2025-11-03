@@ -39,9 +39,11 @@ function EmployeesPageContent() {
     fetchEmployees()
   }, [])
 
+  // https://crm-server-chi.vercel.app/api/employees
+
   const fetchEmployees = async () => {
     try {
-    const response = await fetch('https://crm-server-chi.vercel.app/api/employees', {
+    const response = await fetch(`https://crm-server-chi.vercel.app/api/employees`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('accessToken')}` }
       })
 
