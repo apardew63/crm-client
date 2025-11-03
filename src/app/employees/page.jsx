@@ -90,16 +90,26 @@ function EmployeesPageContent() {
 
   const handleAddEmployee = async (e) => {
     e.preventDefault()
+    
+    // 🧾 Log the form data before sending
+    console.log('🧍‍♂️ Employee Data to Add:', newEmployee)
+  
     try {
       const response = await fetch('https://crm-server-chi.vercel.app/api/employees', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${localStorage.getItem('accessToken')}`
+          Authorization: `Bearer ${localStorage.getItem('accessToken')}`,
         },
-        body: JSON.stringify(newEmployee)
+        body: JSON.stringify(newEmployee),
       })
-
+  
+      // Log the response status for debugging
+      console.log('📡 Response status:', response.status)
+  
+      const data = await response.json()
+      console.log('✅ Server response:', data)
+  
       if (response.ok) {
         setShowAddModal(false)
         setNewEmployee({
@@ -111,16 +121,18 @@ function EmployeesPageContent() {
           designation: '',
           phone: '',
           department: '',
-          salary: ''
+          salary: '',
         })
         fetchEmployees()
-        console.log(fetchEmployees())
+        console.log('🔁 Refetching employees...')
+      } else {
+        console.error('❌ Failed to add employee:', data.error || data.message)
       }
     } catch (error) {
-      console.error('Error adding employee:', error)
+      console.error('💥 Error adding employee:', error)
     }
   }
-
+  
   if (loading) {
     return (
       <div className="p-6">
