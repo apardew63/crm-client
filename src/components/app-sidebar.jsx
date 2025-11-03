@@ -58,11 +58,11 @@ const getNavigationData = (user) => {
       url: "/tasks",
       icon: IconFileText,
     },
-    {
-      title: "Project Management",
-      url: "/projects",
-      icon: IconBriefcase,
-    },
+    // {
+    //   title: "Project Management",
+    //   url: "/projects",
+    //   icon: IconBriefcase,
+    // },
     {
       title: "Attendance Management",
       url: "/attendance",

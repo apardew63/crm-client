@@ -17,7 +17,6 @@ import {
 import { toast } from "sonner";
 import { useAuth } from "@/contexts/AuthContext";
 import { IconUser, IconMail, IconLock, IconEye, IconEyeOff, IconBriefcase, IconShield } from "@tabler/icons-react";
-import { ThemeToggle } from "@/components/theme-toggle";
 
 export function SignupForm({ className, ...props }) {
   const URL = process.env.NEXT_PUBLIC_URL;
@@ -109,9 +108,6 @@ export function SignupForm({ className, ...props }) {
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-background via-muted/20 to-background">
-      <div className="absolute top-4 right-4">
-        <ThemeToggle />
-      </div>
       <Card className="w-full max-w-2xl shadow-medium hover:shadow-soft transition-all duration-300 animate-fade-in glass-effect">
         <CardHeader className="text-center space-y-4 pb-8">
           <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-primary to-earth-brown flex items-center justify-center">
