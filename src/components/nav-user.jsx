@@ -42,17 +42,17 @@ export function NavUser({
           <DropdownMenuTrigger asChild>
             <SidebarMenuButton
               size="lg"
-              className="group relative overflow-hidden rounded-xl p-3 transition-all duration-300 hover:scale-[1.02] hover:shadow-medium bg-gradient-to-r from-muted/30 to-muted/10 backdrop-blur-sm border border-border/30 data-[state=open]:bg-accent data-[state=open]:text-accent-foreground animate-fade-in"
+              className="group relative overflow-hidden rounded-md p-3 transition-all duration-300 hover:scale-[1.02] hover:shadow-medium bg-muted/20 backdrop-blur-sm border border-border/40 data-[state=open]:bg-muted data-[state=open]:text-foreground animate-fade-in"
             >
               <div className="flex items-center gap-3 w-full">
                 <div className="relative">
-                  <Avatar className="h-10 w-10 rounded-xl shadow-soft ring-2 ring-primary/20 transition-all duration-300 group-hover:ring-primary/40">
-                    <AvatarImage 
-                      src={user.avatar && user.avatar !== '/avatars/user.jpg' ? user.avatar : undefined} 
-                      alt={user.name} 
-                      className="rounded-xl"
+                  <Avatar className="h-10 w-10 rounded-md shadow-soft ring-2 ring-primary/20 transition-all duration-300 group-hover:ring-primary/40">
+                    <AvatarImage
+                      src={user.avatar && user.avatar !== '/avatars/user.jpg' ? user.avatar : undefined}
+                      alt={user.name}
+                      className="rounded-md"
                     />
-                    <AvatarFallback className="rounded-xl bg-gradient-to-br from-primary to-earth-brown text-primary-foreground font-semibold">
+                    <AvatarFallback className="rounded-md bg-primary text-primary-foreground font-semibold">
                       {user.name?.split(' ').map(n => n[0]).join('').toUpperCase() || 'U'}
                     </AvatarFallback>
                   </Avatar>
@@ -77,20 +77,20 @@ export function NavUser({
           </DropdownMenuTrigger>
           
           <DropdownMenuContent
-            className="w-(--radix-dropdown-menu-trigger-width) min-w-64 rounded-xl shadow-medium border-border/50"
+            className="w-(--radix-dropdown-menu-trigger-width) min-w-64 rounded-md shadow-medium border-border/40"
             side={isMobile ? "bottom" : "right"}
             align="end"
             sideOffset={8}
           >
             <DropdownMenuLabel className="p-0 font-normal">
-              <div className="flex items-center gap-3 px-3 py-3 bg-gradient-to-r from-muted/30 to-muted/10 rounded-t-xl">
-                <Avatar className="h-10 w-10 rounded-xl shadow-soft">
-                  <AvatarImage 
-                    src={user.avatar && user.avatar !== '/avatars/user.jpg' ? user.avatar : undefined} 
+              <div className="flex items-center gap-3 px-3 py-3 bg-muted/20 rounded-t-md">
+                <Avatar className="h-10 w-10 rounded-md shadow-soft">
+                  <AvatarImage
+                    src={user.avatar && user.avatar !== '/avatars/user.jpg' ? user.avatar : undefined}
                     alt={user.name}
-                    className="rounded-xl"
+                    className="rounded-md"
                   />
-                  <AvatarFallback className="rounded-xl bg-gradient-to-br from-primary to-earth-brown text-primary-foreground font-semibold">
+                  <AvatarFallback className="rounded-md bg-primary text-primary-foreground font-semibold">
                     {user.name?.split(' ').map(n => n[0]).join('').toUpperCase() || 'U'}
                   </AvatarFallback>
                 </Avatar>
@@ -109,19 +109,19 @@ export function NavUser({
             
             <div className="p-1">
               <DropdownMenuGroup>
-                <DropdownMenuItem className="rounded-lg cursor-pointer transition-all duration-200 hover:bg-accent/50">
+                <DropdownMenuItem className="rounded-md cursor-pointer transition-all duration-200 hover:bg-muted/60">
                   <IconUserCircle className="text-primary" />
                   <span className="font-medium">Account Settings</span>
                 </DropdownMenuItem>
-                <DropdownMenuItem className="rounded-lg cursor-pointer transition-all duration-200 hover:bg-accent/50">
-                  <IconSettings className="text-slate-blue-gray" />
+                <DropdownMenuItem className="rounded-md cursor-pointer transition-all duration-200 hover:bg-muted/60">
+                  <IconSettings className="text-medium-gray" />
                   <span className="font-medium">Preferences</span>
                 </DropdownMenuItem>
-                <DropdownMenuItem className="rounded-lg cursor-pointer transition-all duration-200 hover:bg-accent/50">
-                  <IconNotification className="text-earth-brown" />
+                <DropdownMenuItem className="rounded-md cursor-pointer transition-all duration-200 hover:bg-muted/60">
+                  <IconNotification className="text-medium-gray" />
                   <span className="font-medium">Notifications</span>
                 </DropdownMenuItem>
-                <DropdownMenuItem className="rounded-lg cursor-pointer transition-all duration-200 hover:bg-accent/50">
+                <DropdownMenuItem className="rounded-md cursor-pointer transition-all duration-200 hover:bg-muted/60">
                   <IconCreditCard className="text-green-600" />
                   <span className="font-medium">Billing</span>
                 </DropdownMenuItem>
@@ -129,7 +129,7 @@ export function NavUser({
               
               <DropdownMenuSeparator className="bg-border/30 my-2" />
               
-              <DropdownMenuItem className="rounded-lg cursor-pointer transition-all duration-200 hover:bg-destructive/10 text-destructive focus:text-destructive">
+              <DropdownMenuItem className="rounded-md cursor-pointer transition-all duration-200 hover:bg-destructive/10 text-destructive focus:text-destructive">
                 <IconLogout />
                 <span className="font-medium">Sign Out</span>
               </DropdownMenuItem>

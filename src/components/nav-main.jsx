@@ -34,10 +34,10 @@ export function NavMain({ items }) {
                     tooltip={item.title} 
                     asChild
                     className={`
-                      group relative overflow-hidden rounded-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-soft
-                      ${isActive 
-                        ? 'bg-gradient-to-r from-primary to-earth-brown text-primary-foreground shadow-medium' 
-                        : 'hover:bg-accent/50 hover:text-accent-foreground'
+                      group relative overflow-hidden rounded-md transition-all duration-300 hover:scale-[1.02] hover:shadow-soft
+                      ${isActive
+                        ? 'bg-primary text-primary-foreground shadow-medium'
+                        : 'hover:bg-muted/60 hover:text-foreground'
                       }
                     `}
                   >
@@ -51,7 +51,7 @@ export function NavMain({ items }) {
                         </div>
                       )}
                       <span className={`
-                        font-medium transition-all duration-300
+                        font-medium transition-all duration-300 text-sm
                         ${isActive ? 'text-primary-foreground' : 'text-foreground'}
                       `}>
                         {item.title}
@@ -59,7 +59,7 @@ export function NavMain({ items }) {
                       
                       {/* Active indicator */}
                       {isActive && (
-                        <div className="absolute right-2 w-2 h-2 rounded-full bg-primary-foreground/80 animate-pulse" />
+                        <div className="absolute right-3 w-1.5 h-1.5 rounded-full bg-primary-foreground/90 animate-pulse" />
                       )}
                       
                       {/* Hover shine effect */}

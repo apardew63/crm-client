@@ -191,10 +191,10 @@ export function AppSidebar({
   return (
     <Sidebar
       collapsible="offcanvas"
-      className="border-r border-border/30 bg-[#2d2d2d] shadow-soft"
+      className="border-r border-border/40 bg-white shadow-medium"
       {...props}
     >
-      <SidebarHeader className="border-b border-border/20 bg-[#2d2d2d] backdrop-blur-sm">
+      <SidebarHeader className="border-b border-border/30 bg-white/95 backdrop-blur-md">
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton 
@@ -203,15 +203,15 @@ export function AppSidebar({
               className="group relative overflow-hidden rounded-xl p-3 hover:bg-accent/30 transition-all duration-300 hover:scale-[1.02] animate-fade-in"
             >
               <a href="/dashboard" className="flex items-center gap-3">
-                <div className="flex aspect-square size-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-earth-brown shadow-medium group-hover:shadow-soft transition-all duration-300">
-                  <Image 
-                    src={logo} 
-                    alt="Infinitum CRM" 
+                <div className="flex aspect-square size-12 items-center justify-center rounded-xl bg-primary shadow-soft group-hover:shadow-medium transition-all duration-300">
+                  <Image
+                    src={logo}
+                    alt="Infinitum CRM"
                     className="w-8 h-8 filter brightness-0 invert"
                   />
                 </div>
                 <div className="grid flex-1 text-left leading-tight">
-                  <span className="truncate font-bold text-lg bg-gradient-to-r from-primary to-earth-brown bg-clip-text text-transparent">
+                  <span className="truncate font-bold text-lg text-primary">
                     Infinitum
                   </span>
                   <span className="truncate text-xs text-muted-foreground font-medium">
@@ -227,15 +227,15 @@ export function AppSidebar({
         </SidebarMenu>
       </SidebarHeader>
       
-      <SidebarContent className="px-2 py-4 space-y-4 bg-[#2d2d2d]">
+      <SidebarContent className="px-3 py-6 space-y-6 bg-white/50">
         <NavMain items={data.navMain} />
-        <div className="px-3">
-          <div className="h-px bg-[#2d2d2d]" />
+        <div className="px-2">
+          <div className="h-px bg-border/30" />
         </div>
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
-      
-      <SidebarFooter className="border-t border-border/20 bg-[#2d2d2d] backdrop-blur-sm p-3">
+
+      <SidebarFooter className="border-t border-border/30 bg-white/95 backdrop-blur-md p-4">
         <NavUser user={data.user} />
       </SidebarFooter>
     </Sidebar>

@@ -37,10 +37,10 @@ export function NavSecondary({
                 <SidebarMenuButton 
                   asChild
                   className={`
-                    group relative overflow-hidden rounded-lg transition-all duration-300 hover:scale-[1.02]
-                    ${isActive 
-                      ? 'bg-accent text-accent-foreground shadow-soft' 
-                      : 'hover:bg-accent/30 hover:text-accent-foreground'
+                    group relative overflow-hidden rounded-md transition-all duration-300 hover:scale-[1.02]
+                    ${isActive
+                      ? 'bg-muted text-foreground shadow-soft'
+                      : 'hover:bg-muted/40 hover:text-foreground'
                     }
                   `}
                 >
