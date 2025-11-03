@@ -95,13 +95,23 @@ function EmployeesPageContent() {
     console.log('🧍‍♂️ Employee Data to Add:', newEmployee)
   
     try {
+      // Build payload: omit empty strings and coerce numeric fields
+      const payload = Object.fromEntries(
+        Object.entries(newEmployee).filter(([_, value]) => value !== '' && value !== null && value !== undefined)
+      )
+      if (payload.salary !== undefined) {
+        const parsedSalary = Number(payload.salary)
+        if (!Number.isNaN(parsedSalary)) payload.salary = parsedSalary
+        else delete payload.salary
+      }
+
       const response = await fetch('https://crm-server-chi.vercel.app/api/employees', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${localStorage.getItem('accessToken')}`,
         },
-        body: JSON.stringify(newEmployee),
+        body: JSON.stringify(payload),
       })
   
       // Log the response status for debugging
@@ -126,7 +136,7 @@ function EmployeesPageContent() {
         fetchEmployees()
         console.log('🔁 Refetching employees...')
       } else {
-        console.error('❌ Failed to add employee:', data.error || data.message)
+        console.error('❌ Failed to add employee:', data.error || data.message, data.errors || [])
       }
     } catch (error) {
       console.error('💥 Error adding employee:', error)
