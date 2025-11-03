@@ -3659,7 +3659,7 @@
 
   @supports (color: color-mix(in lab, red, red)) {
     .text-sidebar-foreground\/70 {
-      color: color-mix(in oklab, var(--sidebar-foreground) 70%, transparent);
+      color: color-mix(in oklab, var(--sidebar-foreground) 10%, transparent);
     }
   }
 
