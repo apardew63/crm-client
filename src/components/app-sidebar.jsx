@@ -227,12 +227,12 @@ export function AppSidebar({
         </SidebarMenu>
       </SidebarHeader>
       
-      <SidebarContent className="px-3 py-6 space-y-6 bg-white">
+      <SidebarContent className="px-3 py-6 space-y-6">
         <NavMain items={data.navMain} />
         <div className="px-2">
-          <div className="h-px bg-border/30" />
+          <div className="bg-border/30 h-px" />
         </div>
-        <NavSecondary items={data.navSecondary} className="mt-auto" />
+        <NavSecondary items={data.navSecondary} className="mt-auto py-5" />
       </SidebarContent>
 
       <SidebarFooter className="border-t border-border/30 bg-white p-4">
