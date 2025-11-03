@@ -6727,8 +6727,8 @@
   --chart-4: #e1dbc9;
   --chart-5: #f8f7f4;
   --sidebar: #faf9f6;
-  --sidebar-foreground: #2d2d2d;
-  --sidebar-primary: #2d4530;
+  --sidebar-foreground: #fff;
+  --sidebar-primary: red;
   --sidebar-primary-foreground: #fff;
   --sidebar-accent: #e1dbc9;
   --sidebar-accent-foreground: #2d2d2d;
