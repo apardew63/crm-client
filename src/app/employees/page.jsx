@@ -136,7 +136,13 @@ function EmployeesPageContent() {
         fetchEmployees()
         console.log('🔁 Refetching employees...')
       } else {
-        console.error('❌ Failed to add employee:', data.error || data.message, data.errors || [])
+        console.error('❌ Failed to add employee:', data.message || data.error)
+        if (data.errors && data.errors.length > 0) {
+          console.log('Validation errors:')
+          data.errors.forEach((error, index) => {
+            console.log(`${index + 1}. ${error}`)
+          })
+        }
       }
     } catch (error) {
       console.error('💥 Error adding employee:', error)
