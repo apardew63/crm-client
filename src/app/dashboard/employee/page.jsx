@@ -14,6 +14,17 @@ export default function EmployeeDashboard() {
     fetchEmployeeData()
   }, [])
 
+  // Add real-time updates by polling every 30 seconds
+  useEffect(() => {
+    if (!user) return
+
+    const interval = setInterval(() => {
+      fetchEmployeeData()
+    }, 30000) // 30 seconds
+
+    return () => clearInterval(interval)
+  }, [user])
+
   const fetchEmployeeData = async () => {
     try {
       const [statsRes, tasksRes, holidaysRes, perfRes] = await Promise.all([

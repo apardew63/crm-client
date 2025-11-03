@@ -58,6 +58,19 @@ function ProfilePageContent() {
     }
   }
 
+  // Refresh stats when component mounts or user changes
+
+  // Add real-time updates by polling every 30 seconds
+  useEffect(() => {
+    if (!user) return
+
+    const interval = setInterval(() => {
+      fetchUserData()
+    }, 30000) // 30 seconds
+
+    return () => clearInterval(interval)
+  }, [user])
+
   const handleSaveProfile = async () => {
     try {
       const response = await fetch('https://crm-server-chi.vercel.app/api/auth/profile', {
@@ -71,8 +84,8 @@ function ProfilePageContent() {
 
       if (response.ok) {
         setIsEditing(false)
-        // Refresh user data
-        window.location.reload()
+        // Refresh user data instead of full page reload
+        await fetchUserData()
       }
     } catch (error) {
       console.error('Error updating profile:', error)
