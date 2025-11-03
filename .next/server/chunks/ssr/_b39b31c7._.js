@@ -3758,6 +3758,7 @@ function EmployeesPageContent() {
                     salary: ''
                 });
                 fetchEmployees();
+                console.log(fetchEmployees());
             }
         } catch (error) {
             console.error('Error adding employee:', error);
@@ -3774,22 +3775,22 @@ function EmployeesPageContent() {
                         className: "animate-spin rounded-full h-12 w-12 border-b-2 border-primary"
                     }, void 0, false, {
                         fileName: "[project]/src/app/employees/page.jsx",
-                        lineNumber: 128,
+                        lineNumber: 129,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/employees/page.jsx",
-                    lineNumber: 127,
+                    lineNumber: 128,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/employees/page.jsx",
-                lineNumber: 126,
+                lineNumber: 127,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/employees/page.jsx",
-            lineNumber: 125,
+            lineNumber: 126,
             columnNumber: 7
         }, this);
     }
@@ -3809,7 +3810,7 @@ function EmployeesPageContent() {
                                         children: "Employee Management"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/employees/page.jsx",
-                                        lineNumber: 141,
+                                        lineNumber: 142,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3817,13 +3818,13 @@ function EmployeesPageContent() {
                                         children: "Manage your team members and their information"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/employees/page.jsx",
-                                        lineNumber: 142,
+                                        lineNumber: 143,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/employees/page.jsx",
-                                lineNumber: 140,
+                                lineNumber: 141,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3834,20 +3835,20 @@ function EmployeesPageContent() {
                                         className: "w-4 h-4"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/employees/page.jsx",
-                                        lineNumber: 150,
+                                        lineNumber: 151,
                                         columnNumber: 13
                                     }, this),
                                     "Add Employee"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/employees/page.jsx",
-                                lineNumber: 146,
+                                lineNumber: 147,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/employees/page.jsx",
-                        lineNumber: 139,
+                        lineNumber: 140,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3860,7 +3861,7 @@ function EmployeesPageContent() {
                                         className: "absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/employees/page.jsx",
-                                        lineNumber: 158,
+                                        lineNumber: 159,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -3871,13 +3872,13 @@ function EmployeesPageContent() {
                                         className: "w-full pl-10 pr-4 py-2 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/employees/page.jsx",
-                                        lineNumber: 159,
+                                        lineNumber: 160,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/employees/page.jsx",
-                                lineNumber: 157,
+                                lineNumber: 158,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -3890,7 +3891,7 @@ function EmployeesPageContent() {
                                         children: "All Roles"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/employees/page.jsx",
-                                        lineNumber: 173,
+                                        lineNumber: 174,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -3898,7 +3899,7 @@ function EmployeesPageContent() {
                                         children: "Admin"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/employees/page.jsx",
-                                        lineNumber: 174,
+                                        lineNumber: 175,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -3906,7 +3907,7 @@ function EmployeesPageContent() {
                                         children: "Project Manager"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/employees/page.jsx",
-                                        lineNumber: 175,
+                                        lineNumber: 176,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -3914,13 +3915,13 @@ function EmployeesPageContent() {
                                         children: "Employee"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/employees/page.jsx",
-                                        lineNumber: 176,
+                                        lineNumber: 177,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/employees/page.jsx",
-                                lineNumber: 168,
+                                lineNumber: 169,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -3933,7 +3934,7 @@ function EmployeesPageContent() {
                                         children: "All Status"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/employees/page.jsx",
-                                        lineNumber: 184,
+                                        lineNumber: 185,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -3941,7 +3942,7 @@ function EmployeesPageContent() {
                                         children: "Active"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/employees/page.jsx",
-                                        lineNumber: 185,
+                                        lineNumber: 186,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -3949,19 +3950,19 @@ function EmployeesPageContent() {
                                         children: "Inactive"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/employees/page.jsx",
-                                        lineNumber: 186,
+                                        lineNumber: 187,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/employees/page.jsx",
-                                lineNumber: 179,
+                                lineNumber: 180,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/employees/page.jsx",
-                        lineNumber: 156,
+                        lineNumber: 157,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3981,7 +3982,7 @@ function EmployeesPageContent() {
                                                         children: "Employee"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/employees/page.jsx",
-                                                        lineNumber: 196,
+                                                        lineNumber: 197,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -3989,7 +3990,7 @@ function EmployeesPageContent() {
                                                         children: "Role"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/employees/page.jsx",
-                                                        lineNumber: 199,
+                                                        lineNumber: 200,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -3997,7 +3998,7 @@ function EmployeesPageContent() {
                                                         children: "Department"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/employees/page.jsx",
-                                                        lineNumber: 202,
+                                                        lineNumber: 203,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -4005,7 +4006,7 @@ function EmployeesPageContent() {
                                                         children: "Status"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/employees/page.jsx",
-                                                        lineNumber: 205,
+                                                        lineNumber: 206,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -4013,18 +4014,18 @@ function EmployeesPageContent() {
                                                         children: "Actions"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/employees/page.jsx",
-                                                        lineNumber: 208,
+                                                        lineNumber: 209,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/employees/page.jsx",
-                                                lineNumber: 195,
+                                                lineNumber: 196,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 194,
+                                            lineNumber: 195,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -4047,12 +4048,12 @@ function EmployeesPageContent() {
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/app/employees/page.jsx",
-                                                                            lineNumber: 219,
+                                                                            lineNumber: 220,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/employees/page.jsx",
-                                                                        lineNumber: 218,
+                                                                        lineNumber: 219,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4067,7 +4068,7 @@ function EmployeesPageContent() {
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/src/app/employees/page.jsx",
-                                                                                lineNumber: 224,
+                                                                                lineNumber: 225,
                                                                                 columnNumber: 27
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4075,7 +4076,7 @@ function EmployeesPageContent() {
                                                                                 children: employee.email
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/employees/page.jsx",
-                                                                                lineNumber: 227,
+                                                                                lineNumber: 228,
                                                                                 columnNumber: 27
                                                                             }, this),
                                                                             employee.employeeId && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4086,24 +4087,24 @@ function EmployeesPageContent() {
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/src/app/employees/page.jsx",
-                                                                                lineNumber: 229,
+                                                                                lineNumber: 230,
                                                                                 columnNumber: 29
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/employees/page.jsx",
-                                                                        lineNumber: 223,
+                                                                        lineNumber: 224,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/employees/page.jsx",
-                                                                lineNumber: 217,
+                                                                lineNumber: 218,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/employees/page.jsx",
-                                                            lineNumber: 216,
+                                                            lineNumber: 217,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -4113,12 +4114,12 @@ function EmployeesPageContent() {
                                                                 children: employee.role.replace('_', ' ')
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/employees/page.jsx",
-                                                                lineNumber: 237,
+                                                                lineNumber: 238,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/employees/page.jsx",
-                                                            lineNumber: 236,
+                                                            lineNumber: 237,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -4126,7 +4127,7 @@ function EmployeesPageContent() {
                                                             children: employee.department || 'Not assigned'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/employees/page.jsx",
-                                                            lineNumber: 241,
+                                                            lineNumber: 242,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -4136,12 +4137,12 @@ function EmployeesPageContent() {
                                                                 children: employee.isActive ? 'Active' : 'Inactive'
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/employees/page.jsx",
-                                                                lineNumber: 245,
+                                                                lineNumber: 246,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/employees/page.jsx",
-                                                            lineNumber: 244,
+                                                            lineNumber: 245,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -4155,12 +4156,12 @@ function EmployeesPageContent() {
                                                                             className: "w-4 h-4"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/employees/page.jsx",
-                                                                            lineNumber: 258,
+                                                                            lineNumber: 259,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/employees/page.jsx",
-                                                                        lineNumber: 257,
+                                                                        lineNumber: 258,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4169,12 +4170,12 @@ function EmployeesPageContent() {
                                                                             className: "w-4 h-4"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/employees/page.jsx",
-                                                                            lineNumber: 261,
+                                                                            lineNumber: 262,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/employees/page.jsx",
-                                                                        lineNumber: 260,
+                                                                        lineNumber: 261,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     employee.isActive ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4184,12 +4185,12 @@ function EmployeesPageContent() {
                                                                             className: "w-4 h-4"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/employees/page.jsx",
-                                                                            lineNumber: 268,
+                                                                            lineNumber: 269,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/employees/page.jsx",
-                                                                        lineNumber: 264,
+                                                                        lineNumber: 265,
                                                                         columnNumber: 27
                                                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                                         onClick: ()=>handleStatusChange(employee._id, true),
@@ -4198,45 +4199,45 @@ function EmployeesPageContent() {
                                                                             className: "w-4 h-4"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/employees/page.jsx",
-                                                                            lineNumber: 275,
+                                                                            lineNumber: 276,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/employees/page.jsx",
-                                                                        lineNumber: 271,
+                                                                        lineNumber: 272,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/employees/page.jsx",
-                                                                lineNumber: 256,
+                                                                lineNumber: 257,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/employees/page.jsx",
-                                                            lineNumber: 255,
+                                                            lineNumber: 256,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, employee._id, true, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 215,
+                                                    lineNumber: 216,
                                                     columnNumber: 19
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 213,
+                                            lineNumber: 214,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/employees/page.jsx",
-                                    lineNumber: 193,
+                                    lineNumber: 194,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/employees/page.jsx",
-                                lineNumber: 192,
+                                lineNumber: 193,
                                 columnNumber: 11
                             }, this),
                             filteredEmployees.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4246,7 +4247,7 @@ function EmployeesPageContent() {
                                         className: "w-16 h-16 text-muted-foreground mx-auto mb-4 opacity-50"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/employees/page.jsx",
-                                        lineNumber: 288,
+                                        lineNumber: 289,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -4254,7 +4255,7 @@ function EmployeesPageContent() {
                                         children: "No employees found"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/employees/page.jsx",
-                                        lineNumber: 289,
+                                        lineNumber: 290,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4262,19 +4263,19 @@ function EmployeesPageContent() {
                                         children: "Try adjusting your search or filters"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/employees/page.jsx",
-                                        lineNumber: 290,
+                                        lineNumber: 291,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/employees/page.jsx",
-                                lineNumber: 287,
+                                lineNumber: 288,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/employees/page.jsx",
-                        lineNumber: 191,
+                        lineNumber: 192,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4292,7 +4293,7 @@ function EmployeesPageContent() {
                                                     children: "Total Employees"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 300,
+                                                    lineNumber: 301,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4300,31 +4301,31 @@ function EmployeesPageContent() {
                                                     children: employees.length
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 301,
+                                                    lineNumber: 302,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 299,
+                                            lineNumber: 300,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {
                                             className: "w-8 h-8 text-muted-foreground"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 303,
+                                            lineNumber: 304,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/employees/page.jsx",
-                                    lineNumber: 298,
+                                    lineNumber: 299,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/employees/page.jsx",
-                                lineNumber: 297,
+                                lineNumber: 298,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4339,7 +4340,7 @@ function EmployeesPageContent() {
                                                     children: "Active"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 310,
+                                                    lineNumber: 311,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4347,31 +4348,31 @@ function EmployeesPageContent() {
                                                     children: employees.filter((e)=>e.isActive).length
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 311,
+                                                    lineNumber: 312,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 309,
+                                            lineNumber: 310,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__UserCheck$3e$__["UserCheck"], {
                                             className: "w-8 h-8 text-green-500"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 315,
+                                            lineNumber: 316,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/employees/page.jsx",
-                                    lineNumber: 308,
+                                    lineNumber: 309,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/employees/page.jsx",
-                                lineNumber: 307,
+                                lineNumber: 308,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4386,7 +4387,7 @@ function EmployeesPageContent() {
                                                     children: "Inactive"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 322,
+                                                    lineNumber: 323,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4394,31 +4395,31 @@ function EmployeesPageContent() {
                                                     children: employees.filter((e)=>!e.isActive).length
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 323,
+                                                    lineNumber: 324,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 321,
+                                            lineNumber: 322,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2d$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__UserX$3e$__["UserX"], {
                                             className: "w-8 h-8 text-red-500"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 327,
+                                            lineNumber: 328,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/employees/page.jsx",
-                                    lineNumber: 320,
+                                    lineNumber: 321,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/employees/page.jsx",
-                                lineNumber: 319,
+                                lineNumber: 320,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4433,7 +4434,7 @@ function EmployeesPageContent() {
                                                     children: "Admins"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 334,
+                                                    lineNumber: 335,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4441,43 +4442,43 @@ function EmployeesPageContent() {
                                                     children: employees.filter((e)=>e.role === 'admin').length
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 335,
+                                                    lineNumber: 336,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 333,
+                                            lineNumber: 334,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {
                                             className: "w-8 h-8 text-primary"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 339,
+                                            lineNumber: 340,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/employees/page.jsx",
-                                    lineNumber: 332,
+                                    lineNumber: 333,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/employees/page.jsx",
-                                lineNumber: 331,
+                                lineNumber: 332,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/employees/page.jsx",
-                        lineNumber: 296,
+                        lineNumber: 297,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/employees/page.jsx",
-                lineNumber: 137,
+                lineNumber: 138,
                 columnNumber: 7
             }, this),
             showAddModal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4490,7 +4491,7 @@ function EmployeesPageContent() {
                             children: "Add New Employee"
                         }, void 0, false, {
                             fileName: "[project]/src/app/employees/page.jsx",
-                            lineNumber: 349,
+                            lineNumber: 350,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -4507,7 +4508,7 @@ function EmployeesPageContent() {
                                                     children: "First Name"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 353,
+                                                    lineNumber: 354,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4521,13 +4522,13 @@ function EmployeesPageContent() {
                                                     className: "w-full px-3 py-2 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 354,
+                                                    lineNumber: 355,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 352,
+                                            lineNumber: 353,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4537,7 +4538,7 @@ function EmployeesPageContent() {
                                                     children: "Last Name"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 363,
+                                                    lineNumber: 364,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4551,19 +4552,19 @@ function EmployeesPageContent() {
                                                     className: "w-full px-3 py-2 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 364,
+                                                    lineNumber: 365,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 362,
+                                            lineNumber: 363,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/employees/page.jsx",
-                                    lineNumber: 351,
+                                    lineNumber: 352,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4573,7 +4574,7 @@ function EmployeesPageContent() {
                                             children: "Email"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 375,
+                                            lineNumber: 376,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4587,13 +4588,13 @@ function EmployeesPageContent() {
                                             className: "w-full px-3 py-2 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 376,
+                                            lineNumber: 377,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/employees/page.jsx",
-                                    lineNumber: 374,
+                                    lineNumber: 375,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4603,7 +4604,7 @@ function EmployeesPageContent() {
                                             children: "Password"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 386,
+                                            lineNumber: 387,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4617,13 +4618,13 @@ function EmployeesPageContent() {
                                             className: "w-full px-3 py-2 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 387,
+                                            lineNumber: 388,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/employees/page.jsx",
-                                    lineNumber: 385,
+                                    lineNumber: 386,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4636,7 +4637,7 @@ function EmployeesPageContent() {
                                                     children: "Role"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 398,
+                                                    lineNumber: 399,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -4652,7 +4653,7 @@ function EmployeesPageContent() {
                                                             children: "Employee"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/employees/page.jsx",
-                                                            lineNumber: 404,
+                                                            lineNumber: 405,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -4660,7 +4661,7 @@ function EmployeesPageContent() {
                                                             children: "Project Manager"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/employees/page.jsx",
-                                                            lineNumber: 405,
+                                                            lineNumber: 406,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -4668,19 +4669,19 @@ function EmployeesPageContent() {
                                                             children: "Admin"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/employees/page.jsx",
-                                                            lineNumber: 406,
+                                                            lineNumber: 407,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 399,
+                                                    lineNumber: 400,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 397,
+                                            lineNumber: 398,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4690,7 +4691,7 @@ function EmployeesPageContent() {
                                                     children: "Designation"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 410,
+                                                    lineNumber: 411,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4704,19 +4705,19 @@ function EmployeesPageContent() {
                                                     className: "w-full px-3 py-2 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 411,
+                                                    lineNumber: 412,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 409,
+                                            lineNumber: 410,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/employees/page.jsx",
-                                    lineNumber: 396,
+                                    lineNumber: 397,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4729,7 +4730,7 @@ function EmployeesPageContent() {
                                                     children: "Phone"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 423,
+                                                    lineNumber: 424,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4742,13 +4743,13 @@ function EmployeesPageContent() {
                                                     className: "w-full px-3 py-2 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 424,
+                                                    lineNumber: 425,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 422,
+                                            lineNumber: 423,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4758,7 +4759,7 @@ function EmployeesPageContent() {
                                                     children: "Department"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 432,
+                                                    lineNumber: 433,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4771,19 +4772,19 @@ function EmployeesPageContent() {
                                                     className: "w-full px-3 py-2 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/employees/page.jsx",
-                                                    lineNumber: 433,
+                                                    lineNumber: 434,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 431,
+                                            lineNumber: 432,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/employees/page.jsx",
-                                    lineNumber: 421,
+                                    lineNumber: 422,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4793,7 +4794,7 @@ function EmployeesPageContent() {
                                             children: "Salary"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 443,
+                                            lineNumber: 444,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4806,13 +4807,13 @@ function EmployeesPageContent() {
                                             className: "w-full px-3 py-2 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 444,
+                                            lineNumber: 445,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/employees/page.jsx",
-                                    lineNumber: 442,
+                                    lineNumber: 443,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4825,7 +4826,7 @@ function EmployeesPageContent() {
                                             children: "Cancel"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 453,
+                                            lineNumber: 454,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4834,36 +4835,36 @@ function EmployeesPageContent() {
                                             children: "Add Employee"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/employees/page.jsx",
-                                            lineNumber: 460,
+                                            lineNumber: 461,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/employees/page.jsx",
-                                    lineNumber: 452,
+                                    lineNumber: 453,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/employees/page.jsx",
-                            lineNumber: 350,
+                            lineNumber: 351,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/employees/page.jsx",
-                    lineNumber: 348,
+                    lineNumber: 349,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/employees/page.jsx",
-                lineNumber: 347,
+                lineNumber: 348,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/employees/page.jsx",
-        lineNumber: 136,
+        lineNumber: 137,
         columnNumber: 5
     }, this);
 }

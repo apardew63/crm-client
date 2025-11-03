@@ -114,6 +114,7 @@ function EmployeesPageContent() {
           salary: ''
         })
         fetchEmployees()
+        console.log(fetchEmployees())
       }
     } catch (error) {
       console.error('Error adding employee:', error)
