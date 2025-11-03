@@ -6578,15 +6578,15 @@
   }
 
   .bg-dark-pine {
-    background-color: #2d4530;
+    background-color: #fff;
   }
 
   .text-dark-pine {
-    color: #2d4530;
+    color: #fff;
   }
 
   .to-dark-pine {
-    --tw-gradient-to: #2d4530 var(--tw-gradient-to-position);
+    --tw-gradient-to: #fff var(--tw-gradient-to-position);
   }
 
   .text-beige-sand {
@@ -6699,7 +6699,7 @@
   --beige-sand: #e1dbc9;
   --slate-blue-gray: #6b7b84;
   --earth-brown: #5e4b3b;
-  --dark-pine: #2d4530;
+  --dark-pine: #fff;
   --charcoal-grey: #3c3c3c;
   --radius: .5rem;
   --background: #fefefe;
@@ -6708,7 +6708,7 @@
   --card-foreground: #2d2d2d;
   --popover: #fff;
   --popover-foreground: #2d2d2d;
-  --primary: #2d4530;
+  --primary: #fff;
   --primary-foreground: #fff;
   --secondary: #e1dbc9;
   --secondary-foreground: #2d2d2d;
@@ -6720,8 +6720,8 @@
   --destructive-foreground: #fff;
   --border: #e8e5dc;
   --input: #f8f7f4;
-  --ring: #2d4530;
-  --chart-1: #2d4530;
+  --ring: #fff;
+  --chart-1: #fff;
   --chart-2: #5e4b3b;
   --chart-3: #6b7b84;
   --chart-4: #e1dbc9;
@@ -6733,7 +6733,7 @@
   --sidebar-accent: #e1dbc9;
   --sidebar-accent-foreground: yellow;
   --sidebar-border: #e8e5dc;
-  --sidebar-ring: #2d4530;
+  --sidebar-ring: blue;
 }
 
 .dark {
