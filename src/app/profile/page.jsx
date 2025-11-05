@@ -104,10 +104,10 @@ function ProfilePageContent() {
   }
 
   return (
-    <div className="p-6">
-      <div className="max-w-7xl mx-auto space-y-8">
+    <div className="p-6 max-sm:p-0">
+      <div className="max-w-8xl mx-auto space-y-8">
         {/* Header */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between max-sm:flex-col max-sm:justify-start max-sm:text-left max-sm:items-start max-sm:space-y-4">
           <div>
             <h1 className="text-4xl font-light tracking-tight text-slate-900">Profile</h1>
             <p className="text-slate-600 mt-2">Manage your account information and view your performance</p>

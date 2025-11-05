@@ -71,9 +71,9 @@ export default function SalesDashboard() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-7xl mx-auto p-6 space-y-8">
+      <div className="max-w-8xl mx-auto p-6 max-sm:p-0 space-y-8">
         {/* Header */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between max-sm:flex-col max-sm:justify-start max-sm:text-left max-sm:items-start max-sm:space-y-4">
           <div>
             <h1 className="text-3xl font-light tracking-tight text-foreground">Sales Dashboard</h1>
             <p className="text-muted-foreground mt-1">Track calls, leads, and performance</p>

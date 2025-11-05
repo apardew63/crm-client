@@ -119,7 +119,7 @@ function HelpPageContent() {
 
   return (
     <div className="p-6">
-      <div className="max-w-7xl mx-auto space-y-8">
+      <div className="max-w-8xl mx-auto space-y-8">
         {/* Header */}
         <div className="text-center">
           <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">

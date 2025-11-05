@@ -115,7 +115,7 @@ function ReportsPageContent() {
   if (loading) {
     return (
       <div className="p-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-8xl mx-auto">
           <div className="flex items-center justify-center h-64">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
           </div>
@@ -172,10 +172,10 @@ function ReportsPageContent() {
   }
 
   return (
-    <div className="p-6">
-      <div className="max-w-7xl mx-auto space-y-8">
+    <div className="p-6 max-sm:p-0">
+      <div className="max-w-8xl mx-auto space-y-8">
         {/* Header */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between max-sm:flex-col max-sm:justify-start max-sm:text-left max-sm:items-start max-sm:space-y-4">
           <div>
             <h1 className="text-3xl font-light tracking-tight text-foreground">Reports</h1>
             <p className="text-muted-foreground mt-1">Generate and view comprehensive business reports</p>

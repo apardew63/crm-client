@@ -151,7 +151,7 @@ function EmployeesPageContent() {
   if (loading) {
     return (
       <div className="p-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-8xl mx-auto">
           <div className="flex items-center justify-center h-64">
             <div className="animate-spin rounded-full h-8 w-8 border-2 border-primary/20 border-t-primary"></div>
           </div>
@@ -161,10 +161,10 @@ function EmployeesPageContent() {
   }
 
   return (
-    <div className="p-8 relative">
-      <div className="max-w-7xl mx-auto space-y-8">
+    <div className="p-8 max-sm:p-0 relative">
+      <div className="max-w-8xl mx-auto space-y-8">
         {/* Header */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between max-sm:flex-col max-sm:justify-start max-sm:text-left max-sm:items-start max-sm:space-y-4">
           <div>
             <h1 className="text-2xl font-medium tracking-tight text-foreground">Employee Management</h1>
             <p className="text-muted-foreground mt-1">
@@ -181,7 +181,7 @@ function EmployeesPageContent() {
         </div>
 
         {/* Filters and Search */}
-        <div className="flex flex-col sm:flex-row gap-6">
+        <div className="flex flex-col max-sm:flex-col gap-6">
           <div className="flex-1 relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
             <input

@@ -49,11 +49,11 @@ export default function AdminDashboard() {
 
   return (
     <div className="min-h-screen">
-      <div className="max-w-7xl mx-auto p-6 space-y-8">
+      <div className="max-w-8xl mx-auto p-6 max-sm:p-0 space-y-8">
         {/* Header */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between max-sm:flex-col max-sm:justify-start max-sm:text-left max-sm:items-start max-sm:space-y-4">
           <div>
-            <h1 className="text-4xl font-light tracking-tight text-white">Admin Dashboard</h1>
+            <h1 className="text-4xl font-light tracking-tight text-black max-sm:text-[20px]">Admin Dashboard</h1>
             <p className="text-slate-600 mt-2">System overview and management</p>
           </div>
           <div className="px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-sm rounded-lg shadow-sm">

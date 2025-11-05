@@ -169,9 +169,9 @@ function AttendanceContent() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
-      className="container mx-auto p-6 space-y-6 max-w-7xl"
+      className="container mx-auto p-6 max-sm:p-0 space-y-6 max-w-8xl"
     >
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between max-sm:flex-col max-sm:justify-start max-sm:text-left max-sm:items-start max-sm:space-y-4">
         <div>
           <h1 className="text-3xl font-bold flex items-center gap-2">
             <FileText className="h-8 w-8 text-blue-600" />
