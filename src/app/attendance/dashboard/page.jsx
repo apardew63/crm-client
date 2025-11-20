@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
-import { useAuth } from '@/contexts/AuthContext';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { DashboardLayout } from "@/components/dashboard-layout";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
@@ -22,11 +21,11 @@ function AttendanceDashboard() {
   const [attendances, setAttendances] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [previousCount, setPreviousCount] = useState(0);
+  const previousCountRef = useRef(0);
 
   useEffect(() => {
     fetchAttendances();
-    const interval = setInterval(fetchAttendances, 5000); // Poll every 5 seconds
+    const interval = setInterval(fetchAttendances, 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -41,10 +40,9 @@ function AttendanceDashboard() {
         throw new Error(`Failed to fetch attendances: ${response.status} ${response.statusText}`);
       }
       const data = await response.json();
-      setPreviousCount(attendances.length);
+      previousCountRef.current = attendances.length;
       setAttendances(data);
     } catch (err) {
-      console.error('Error fetching attendances:', err);
       setError(err.message);
     } finally {
       setLoading(false);
@@ -130,7 +128,7 @@ function AttendanceDashboard() {
                     <tr
                       key={att._id || index}
                       className={`border-b transition-colors ${
-                        index < attendances.length - previousCount ? 'bg-yellow-100' : ''
+                        index < attendances.length - previousCountRef.current ? 'bg-yellow-100' : ''
                       }`}
                     >
                       <td className="p-2">{att.name}</td>
