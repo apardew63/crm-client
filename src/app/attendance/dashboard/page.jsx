@@ -32,7 +32,7 @@ function AttendanceDashboard() {
 
   const fetchAttendances = async () => {
     try {
-      const response = await fetch('https://adnan4498-infinitum-crm-server-glob.vercel.app/api/attendance', {
+      const response = await fetch('https://crm-server-chi.vercel.app/api/attendance', {
         headers: {
           'Authorization': 'FACE_SECRET_123'
         }

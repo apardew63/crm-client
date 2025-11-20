@@ -163,7 +163,7 @@ function AttendanceContent() {
     try {
       const response = await fetch('https://adnan4498-infinitum-crm-server-glob.vercel.app/api/attendance', {
         headers: {
-          'Authorization': 'Bearer FACE_SECRET_123'
+          'Authorization': 'FACE_SECRET_123'
         }
       });
       if (!response.ok) {
