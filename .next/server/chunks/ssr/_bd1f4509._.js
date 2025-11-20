@@ -3815,7 +3815,11 @@ function AttendanceContent() {
     // Fetch live attendance records
     const fetchAttendances = async ()=>{
         try {
-            const response = await fetch('https://adnan4498-infinitum-crm-server-glob.vercel.app/api/attendance');
+            const response = await fetch('https://adnan4498-infinitum-crm-server-glob.vercel.app/api/attendance', {
+                headers: {
+                    'Authorization': 'FACE_SECRET_123'
+                }
+            });
             if (!response.ok) {
                 throw new Error('Failed to fetch attendances');
             }
@@ -3867,14 +3871,14 @@ function AttendanceContent() {
                                         className: "h-8 w-8 text-blue-600"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/attendance/page.jsx",
-                                        lineNumber: 201,
+                                        lineNumber: 205,
                                         columnNumber: 13
                                     }, this),
                                     "Attendance Management"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/attendance/page.jsx",
-                                lineNumber: 200,
+                                lineNumber: 204,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3882,13 +3886,13 @@ function AttendanceContent() {
                                 children: isAdmin ? 'Download attendance PDF files uploaded by project managers' : 'Upload attendance PDF files for processing'
                             }, void 0, false, {
                                 fileName: "[project]/src/app/attendance/page.jsx",
-                                lineNumber: 204,
+                                lineNumber: 208,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/attendance/page.jsx",
-                        lineNumber: 199,
+                        lineNumber: 203,
                         columnNumber: 9
                     }, this),
                     isAdmin && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -3900,20 +3904,20 @@ function AttendanceContent() {
                                 className: "mr-2 h-4 w-4"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/attendance/page.jsx",
-                                lineNumber: 213,
+                                lineNumber: 217,
                                 columnNumber: 13
                             }, this),
                             loading ? 'Loading...' : 'Refresh PDFs'
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/attendance/page.jsx",
-                        lineNumber: 212,
+                        lineNumber: 216,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/attendance/page.jsx",
-                lineNumber: 198,
+                lineNumber: 202,
                 columnNumber: 7
             }, this),
             error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$alert$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Alert"], {
@@ -3923,20 +3927,20 @@ function AttendanceContent() {
                         className: "h-4 w-4"
                     }, void 0, false, {
                         fileName: "[project]/src/app/attendance/page.jsx",
-                        lineNumber: 221,
+                        lineNumber: 225,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$alert$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDescription"], {
                         children: error
                     }, void 0, false, {
                         fileName: "[project]/src/app/attendance/page.jsx",
-                        lineNumber: 222,
+                        lineNumber: 226,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/attendance/page.jsx",
-                lineNumber: 220,
+                lineNumber: 224,
                 columnNumber: 9
             }, this),
             isProjectManager && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -3951,27 +3955,27 @@ function AttendanceContent() {
                                         className: "h-5 w-5 text-blue-600"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/attendance/page.jsx",
-                                        lineNumber: 231,
+                                        lineNumber: 235,
                                         columnNumber: 15
                                     }, this),
                                     "Upload Attendance PDF"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/attendance/page.jsx",
-                                lineNumber: 230,
+                                lineNumber: 234,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardDescription"], {
                                 children: "Upload attendance records as a PDF file for admin review"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/attendance/page.jsx",
-                                lineNumber: 234,
+                                lineNumber: 238,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/attendance/page.jsx",
-                        lineNumber: 229,
+                        lineNumber: 233,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -3986,7 +3990,7 @@ function AttendanceContent() {
                                             children: "Select PDF File"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/attendance/page.jsx",
-                                            lineNumber: 241,
+                                            lineNumber: 245,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4001,7 +4005,7 @@ function AttendanceContent() {
                                                     className: "flex-1"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                                    lineNumber: 243,
+                                                    lineNumber: 247,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -4014,7 +4018,7 @@ function AttendanceContent() {
                                                                 className: "mr-2 h-4 w-4 animate-spin"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/attendance/page.jsx",
-                                                                lineNumber: 258,
+                                                                lineNumber: 262,
                                                                 columnNumber: 25
                                                             }, this),
                                                             "Uploading..."
@@ -4025,7 +4029,7 @@ function AttendanceContent() {
                                                                 className: "mr-2 h-4 w-4"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/attendance/page.jsx",
-                                                                lineNumber: 263,
+                                                                lineNumber: 267,
                                                                 columnNumber: 25
                                                             }, this),
                                                             "Upload"
@@ -4033,19 +4037,19 @@ function AttendanceContent() {
                                                     }, void 0, true)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                                    lineNumber: 251,
+                                                    lineNumber: 255,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/attendance/page.jsx",
-                                            lineNumber: 242,
+                                            lineNumber: 246,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                    lineNumber: 240,
+                                    lineNumber: 244,
                                     columnNumber: 15
                                 }, this),
                                 selectedFile && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4055,7 +4059,7 @@ function AttendanceContent() {
                                             className: "h-5 w-5 text-blue-600"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/attendance/page.jsx",
-                                            lineNumber: 273,
+                                            lineNumber: 277,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4066,7 +4070,7 @@ function AttendanceContent() {
                                                     children: selectedFile.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                                    lineNumber: 275,
+                                                    lineNumber: 279,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4077,26 +4081,26 @@ function AttendanceContent() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                                    lineNumber: 276,
+                                                    lineNumber: 280,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/attendance/page.jsx",
-                                            lineNumber: 274,
+                                            lineNumber: 278,
                                             columnNumber: 19
                                         }, this),
                                         uploadProgress === 100 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
                                             className: "h-5 w-5 text-green-600"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/attendance/page.jsx",
-                                            lineNumber: 281,
+                                            lineNumber: 285,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                    lineNumber: 272,
+                                    lineNumber: 276,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$alert$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Alert"], {
@@ -4105,37 +4109,37 @@ function AttendanceContent() {
                                             className: "h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/attendance/page.jsx",
-                                            lineNumber: 287,
+                                            lineNumber: 291,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$alert$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDescription"], {
                                             children: "Please ensure the PDF contains attendance data in a readable format. The system will automatically process and extract attendance records."
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/attendance/page.jsx",
-                                            lineNumber: 288,
+                                            lineNumber: 292,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                    lineNumber: 286,
+                                    lineNumber: 290,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/attendance/page.jsx",
-                            lineNumber: 239,
+                            lineNumber: 243,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/attendance/page.jsx",
-                        lineNumber: 238,
+                        lineNumber: 242,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/attendance/page.jsx",
-                lineNumber: 228,
+                lineNumber: 232,
                 columnNumber: 9
             }, this),
             isAdmin && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -4149,27 +4153,27 @@ function AttendanceContent() {
                                         className: "h-5 w-5 text-emerald-600"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/attendance/page.jsx",
-                                        lineNumber: 303,
+                                        lineNumber: 307,
                                         columnNumber: 13
                                     }, this),
                                     "Uploaded PDF Files"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/attendance/page.jsx",
-                                lineNumber: 302,
+                                lineNumber: 306,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardDescription"], {
                                 children: "Attendance PDF files uploaded by project managers"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/attendance/page.jsx",
-                                lineNumber: 306,
+                                lineNumber: 310,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/attendance/page.jsx",
-                        lineNumber: 301,
+                        lineNumber: 305,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -4180,7 +4184,7 @@ function AttendanceContent() {
                                     className: "animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900 mx-auto"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                    lineNumber: 313,
+                                    lineNumber: 317,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4188,13 +4192,13 @@ function AttendanceContent() {
                                     children: "Loading PDF files..."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                    lineNumber: 314,
+                                    lineNumber: 318,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/attendance/page.jsx",
-                            lineNumber: 312,
+                            lineNumber: 316,
                             columnNumber: 13
                         }, this) : pdfFiles.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "text-center py-8",
@@ -4203,7 +4207,7 @@ function AttendanceContent() {
                                     className: "mx-auto h-12 w-12 text-muted-foreground"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                    lineNumber: 318,
+                                    lineNumber: 322,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -4211,7 +4215,7 @@ function AttendanceContent() {
                                     children: "No PDF Files"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                    lineNumber: 319,
+                                    lineNumber: 323,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4219,13 +4223,13 @@ function AttendanceContent() {
                                     children: "No attendance PDF files have been uploaded yet."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                    lineNumber: 320,
+                                    lineNumber: 324,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/attendance/page.jsx",
-                            lineNumber: 317,
+                            lineNumber: 321,
                             columnNumber: 13
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "space-y-4",
@@ -4240,7 +4244,7 @@ function AttendanceContent() {
                                                     children: file.filename
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                                    lineNumber: 329,
+                                                    lineNumber: 333,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4254,13 +4258,13 @@ function AttendanceContent() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                                    lineNumber: 330,
+                                                    lineNumber: 334,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/attendance/page.jsx",
-                                            lineNumber: 328,
+                                            lineNumber: 332,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -4272,36 +4276,36 @@ function AttendanceContent() {
                                                     className: "mr-2 h-4 w-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                                    lineNumber: 340,
+                                                    lineNumber: 344,
                                                     columnNumber: 21
                                                 }, this),
                                                 "Download"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/attendance/page.jsx",
-                                            lineNumber: 335,
+                                            lineNumber: 339,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, index, true, {
                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                    lineNumber: 327,
+                                    lineNumber: 331,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/attendance/page.jsx",
-                            lineNumber: 325,
+                            lineNumber: 329,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/attendance/page.jsx",
-                        lineNumber: 310,
+                        lineNumber: 314,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/attendance/page.jsx",
-                lineNumber: 300,
+                lineNumber: 304,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
@@ -4316,27 +4320,27 @@ function AttendanceContent() {
                                         className: "h-5 w-5 text-green-600"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/attendance/page.jsx",
-                                        lineNumber: 355,
+                                        lineNumber: 359,
                                         columnNumber: 13
                                     }, this),
                                     "Live Attendance Dashboard"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/attendance/page.jsx",
-                                lineNumber: 354,
+                                lineNumber: 358,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardDescription"], {
                                 children: "Real-time attendance records from face recognition system"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/attendance/page.jsx",
-                                lineNumber: 358,
+                                lineNumber: 362,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/attendance/page.jsx",
-                        lineNumber: 353,
+                        lineNumber: 357,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -4347,7 +4351,7 @@ function AttendanceContent() {
                                     className: "animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900 mx-auto"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                    lineNumber: 365,
+                                    lineNumber: 369,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4355,13 +4359,13 @@ function AttendanceContent() {
                                     children: "Loading attendance records..."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                    lineNumber: 366,
+                                    lineNumber: 370,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/attendance/page.jsx",
-                            lineNumber: 364,
+                            lineNumber: 368,
                             columnNumber: 13
                         }, this) : attendanceError ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$alert$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Alert"], {
                             variant: "destructive",
@@ -4370,20 +4374,20 @@ function AttendanceContent() {
                                     className: "h-4 w-4"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                    lineNumber: 370,
+                                    lineNumber: 374,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$alert$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDescription"], {
                                     children: attendanceError
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                    lineNumber: 371,
+                                    lineNumber: 375,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/attendance/page.jsx",
-                            lineNumber: 369,
+                            lineNumber: 373,
                             columnNumber: 13
                         }, this) : attendances.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "text-center py-8",
@@ -4392,7 +4396,7 @@ function AttendanceContent() {
                                     className: "mx-auto h-12 w-12 text-muted-foreground"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                    lineNumber: 375,
+                                    lineNumber: 379,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -4400,7 +4404,7 @@ function AttendanceContent() {
                                     children: "No Attendance Records"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                    lineNumber: 376,
+                                    lineNumber: 380,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4408,13 +4412,13 @@ function AttendanceContent() {
                                     children: "No attendance has been logged yet. Run the face recognition system to start logging."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                    lineNumber: 377,
+                                    lineNumber: 381,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/attendance/page.jsx",
-                            lineNumber: 374,
+                            lineNumber: 378,
                             columnNumber: 13
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "overflow-x-auto",
@@ -4430,7 +4434,7 @@ function AttendanceContent() {
                                                     children: "Name"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                                    lineNumber: 386,
+                                                    lineNumber: 390,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -4438,18 +4442,18 @@ function AttendanceContent() {
                                                     children: "Time"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/attendance/page.jsx",
-                                                    lineNumber: 387,
+                                                    lineNumber: 391,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/attendance/page.jsx",
-                                            lineNumber: 385,
+                                            lineNumber: 389,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/attendance/page.jsx",
-                                        lineNumber: 384,
+                                        lineNumber: 388,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -4461,7 +4465,7 @@ function AttendanceContent() {
                                                         children: att.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/attendance/page.jsx",
-                                                        lineNumber: 398,
+                                                        lineNumber: 402,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -4469,46 +4473,46 @@ function AttendanceContent() {
                                                         children: att.timestamp.split(' ')[1]
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/attendance/page.jsx",
-                                                        lineNumber: 399,
+                                                        lineNumber: 403,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, att._id || index, true, {
                                                 fileName: "[project]/src/app/attendance/page.jsx",
-                                                lineNumber: 392,
+                                                lineNumber: 396,
                                                 columnNumber: 21
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/attendance/page.jsx",
-                                        lineNumber: 390,
+                                        lineNumber: 394,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/attendance/page.jsx",
-                                lineNumber: 383,
+                                lineNumber: 387,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/attendance/page.jsx",
-                            lineNumber: 382,
+                            lineNumber: 386,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/attendance/page.jsx",
-                        lineNumber: 362,
+                        lineNumber: 366,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/attendance/page.jsx",
-                lineNumber: 352,
+                lineNumber: 356,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/attendance/page.jsx",
-        lineNumber: 192,
+        lineNumber: 196,
         columnNumber: 5
     }, this);
 }

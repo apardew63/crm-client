@@ -161,7 +161,11 @@ function AttendanceContent() {
   // Fetch live attendance records
   const fetchAttendances = async () => {
     try {
-      const response = await fetch('https://adnan4498-infinitum-crm-server-glob.vercel.app/api/attendance');
+      const response = await fetch('https://adnan4498-infinitum-crm-server-glob.vercel.app/api/attendance', {
+        headers: {
+          'Authorization': 'FACE_SECRET_123'
+        }
+      });
       if (!response.ok) {
         throw new Error('Failed to fetch attendances');
       }
