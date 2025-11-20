@@ -49,7 +49,7 @@ const getNavigationData = (user) => {
 
   const adminNav = [
     {
-      title: "Employee Management",
+      title: "Employee Managements",
       url: "/employees",
       icon: IconUsers,
     },
