@@ -11,7 +11,7 @@ import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Download, AlertCircle, Upload, FileText, CheckCircle2, Loader2 } from 'lucide-react';
+import { Download, AlertCircle, Upload, FileText, CheckCircle2, Loader2, Users } from 'lucide-react';
 import { toast } from 'sonner';
 
 export default function AttendancePage() {
@@ -32,6 +32,10 @@ function AttendanceContent() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [uploading, setUploading] = useState(false);
   const [uploadProgress, setUploadProgress] = useState(0);
+  const [attendances, setAttendances] = useState([]);
+  const [attendanceLoading, setAttendanceLoading] = useState(true);
+  const [attendanceError, setAttendanceError] = useState(null);
+  const [previousCount, setPreviousCount] = useState(0);
 
   const isAdmin = user?.role === 'admin';
   const isProjectManager = user?.role === 'project_manager' || 
@@ -146,7 +150,7 @@ function AttendanceContent() {
       a.click();
       window.URL.revokeObjectURL(url);
       document.body.removeChild(a);
-      
+
       toast.success('PDF downloaded successfully');
     } catch (err) {
       console.error('Error downloading PDF:', err);
@@ -154,14 +158,38 @@ function AttendanceContent() {
     }
   };
 
+  // Fetch live attendance records
+  const fetchAttendances = async () => {
+    try {
+      const response = await fetch('https://adnan4498-infinitum-crm-server-glob.vercel.app/api/attendance', {
+        headers: {
+          'Authorization': 'FACE_SECRET_123'
+        }
+      });
+      if (!response.ok) {
+        throw new Error('Failed to fetch attendances');
+      }
+      const data = await response.json();
+      setPreviousCount(attendances.length);
+      setAttendances(data);
+    } catch (err) {
+      setAttendanceError(err.message);
+    } finally {
+      setAttendanceLoading(false);
+    }
+  };
 
-  // Load PDF files on component mount (only for admin)
+
+  // Load PDF files and attendances on component mount
   useEffect(() => {
     if (isAdmin) {
       loadPdfFiles();
     } else {
       setLoading(false);
     }
+    fetchAttendances();
+    const interval = setInterval(fetchAttendances, 5000); // Poll every 5 seconds
+    return () => clearInterval(interval);
   }, [isAdmin]);
 
   return (
@@ -304,11 +332,11 @@ function AttendanceContent() {
                   <div className="flex-1">
                     <h4 className="font-medium">{file.filename}</h4>
                     <p className="text-sm text-muted-foreground">
-                      Uploaded: {new Date(file.uploadDate).toLocaleString()} • 
+                      Uploaded: {new Date(file.uploadDate).toLocaleString()} •
                       Size: {(file.size / 1024 / 1024).toFixed(2)} MB
                     </p>
                   </div>
-                  <Button 
+                  <Button
                     onClick={() => downloadPdf(file.filename)}
                     variant="outline"
                     size="sm"
@@ -323,6 +351,64 @@ function AttendanceContent() {
         </CardContent>
       </Card>
       )}
+
+      {/* Live Attendance Section */}
+      <Card className="border-l-4 border-l-green-500">
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Users className="h-5 w-5 text-green-600" />
+            Live Attendance Dashboard
+          </CardTitle>
+          <CardDescription>
+            Real-time attendance records from face recognition system
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          {attendanceLoading ? (
+            <div className="text-center py-8">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900 mx-auto"></div>
+              <p className="mt-2 text-sm text-muted-foreground">Loading attendance records...</p>
+            </div>
+          ) : attendanceError ? (
+            <Alert variant="destructive">
+              <AlertCircle className="h-4 w-4" />
+              <AlertDescription>{attendanceError}</AlertDescription>
+            </Alert>
+          ) : attendances.length === 0 ? (
+            <div className="text-center py-8">
+              <Users className="mx-auto h-12 w-12 text-muted-foreground" />
+              <h3 className="mt-2 text-sm font-semibold">No Attendance Records</h3>
+              <p className="mt-1 text-sm text-muted-foreground">
+                No attendance has been logged yet. Run the face recognition system to start logging.
+              </p>
+            </div>
+          ) : (
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="border-b">
+                    <th className="text-left p-2 font-medium">Name</th>
+                    <th className="text-left p-2 font-medium">Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {attendances.map((att, index) => (
+                    <tr
+                      key={att._id || index}
+                      className={`border-b transition-colors ${
+                        index < attendances.length - previousCount ? 'bg-yellow-100' : ''
+                      }`}
+                    >
+                      <td className="p-2">{att.name}</td>
+                      <td className="p-2">{att.timestamp.split(' ')[1]}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </CardContent>
+      </Card>
 
     </motion.div>
   );
